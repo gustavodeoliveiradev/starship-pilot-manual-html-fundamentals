@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starship Pilot Manual = Class IX Interceptor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Starship Flight & System Manual</h1>
+        <p><strong>Vessel:</strong>NX-74205 Sentinel Interceptor</p>
+
+        <!-- Main Navigation with Anchor Links -->
+        <nav>
+            <ul>
+                <li><a href="#preflight">1. Pre-Flight Protocol</a></li>
+                <li><a href="#hyperdrive">2. Hyperdrive Sequence</a></li>
+                <li><a href="#emergency">3. Emergency Override</a></li>
+                <li><a href="#frequencies">4. Subspace Frequencies</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <!-- Section 1: Pre-Flight Protocol -->
+        <article id="preflight">
+            <h2>1. Pre-Flight Protocol</h2>
+            <p>Ensure all safety locks are disengaged and life support systems are stable before engine ignition.</p>
+
+            <h3>Initial Check Script</h3>
+            <p>Run the diagnostic script in the central flight computer:</p>
+            <pre><code>$ sysctl --check life_support
+[OK] Oxygen levels: 98%
+[OK] Gravity matrix: 1.0G
+[OK] Shield generators: ONLINE</code></pre>
+        </article>
+
+        <hr>
+
+        <!-- Section 2: Hyperdrive Sequence -->
+        <article id="hyperdrive">
+            <h2>2. Hyperdrive Sequence</h2>
+            <p>Calculating coordinates and spooling up the warp core requires precise timing to avoid spatial distortion.</p>
+
+            <ol>
+                <li>Lock target coordinates via Navigation Console.</li>
+                <li>Charge Techyon Coils: execute command <code>warp --charge 100%</code></li>
+                <li>Engage Safety Buffer and initiate jump.</li>
+            </ol>
+        </article>
+
+        <hr>
+
+        <!-- Section 3: Emergency Override -->
+        <article id="emergency">
+            <h2>3. Emergency Override</h2>
+            <p>In case of total power loss or localized containment breach, bypass primary relays immediately.</p>
+
+            <pre><code># WARNING: Executing override will clear current nav logs
+# Enter manual override key:
+$ sudo systemctl restart warp_containment.service --force</code></pre>
+        </article>
+
+        <hr>
+
+        <!-- Section 4: Subspace Frequencies -->
+        <article id="frequencies">
+            <h2>4. Subspace Frequencies</h2>
+            <p>Standard subspace communication channels for planetary and deep-space relays:</p>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Channel Name</th>
+                        <th>Frequency (GHz)</th>
+                        <th>Encryption Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starbase Alpha</td>
+                        <td>1420.405</td>
+                        <td>Encrypted (RSA-4096)</td>
+                    </tr>
+                    <tr>
+                        <td>Fleet Command</td>
+                        <td>8830.120</td>
+                        <td>Quantum Key Required</td>
+                    </tr>
+                    <tr>
+                        <td>Distress Signal (Universal)</td>
+                        <td>100.00</td>
+                        <td>Unencrypted</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <p><a href="#">▲ Back to Top Menu</a></p>
+        <p><strong>Status:</strong> Ship Systems Operational | Fleet Protocol v4.2</p>
+        <p><small>&copy; 2026 Starfleet Command Repository. Confidential Manual.</small></p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
